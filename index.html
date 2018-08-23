@@ -2,26 +2,37 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title>Kurs JavaScript</title>
-  <link rel ="stylesheet" href="css/bootstrap.min.css">
+  <title>Register</title>
 </head>
 
 <body>
   <main>
-    <h1>Medical register - orthopedist</h1>
+    <h1>Medical register - Trauma and Orthopaedic Clinic</h1>
+    <p><h3>Current date: </h3><span id="dateText"></span></p>
     <form>
       <label for="name-input">Name</label><br>
       <input type="text" id="name-input" placeholder="Enter your name"> <br> <br>
-      <label for="name-input">Surname</label><br>
+      <label for="surname-input">Surname</label><br>
       <input type="text" id="surname-input" placeholder="Enter your surname"> <br> <br>
-      <label for="name-input">Date of birth</label><br>
+      <label for="date-of-birth-input">Date of birth (d/m/yyyy)</label><br>
       <input type="text" id="date-of-birth-input" placeholder="Enter your date of birth"> <br> <br>
-      <label for="name-input">City</label><br>
+      <label for="city-input">City</label><br>
       <input type="text" id="city-input" placeholder="Enter your city"> <br> <br>
-      <label for="name-input">PESEL</label><br>
-      <input type="text" id="pesel-input" placeholder="Enter your PESEL"> <br> <br> <br>
-      <input type="submit" value="REGISTER">
+      <label for="pesel-input">PESEL</label><br>
+      <input type="text" id="pesel-input" placeholder="Enter your PESEL"> <br> <br>
+      <p id="warning"></p>
+      <button type="button" id="input-submit">ddd</button>
+    </form>
+    <h3>CHECK AND CLICK "REGISTER" IF CORRECT, OR CHANGE DATA ABOVE IF WRONG</h3>
+    <p>Specialization: Orthopedist</p>
+    <p>Patient: <span id="name-text"></span> <span id="surname-text"></span></p>
+    <p>Age:<span id="age"></span></p>
+    <p>PESEL:<span id="pesel-text"></span></p>
+    <p>Place of visit: Medical Facility in <span id="city-text"></span></p>
+    <form>
+      <input type="submit" value="REGISTER">      <input type="submit" value="CORRECT">
     </form>
   </main>
+<script src="script.js"></script>
 </body>
 </html>
